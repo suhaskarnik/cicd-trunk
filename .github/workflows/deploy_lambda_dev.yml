@@ -1,4 +1,4 @@
-name: Deploy Lambda
+name: Deploy Lambda to Dev
 
 permissions:
   id-token: write # This is required for requesting the JWT
