@@ -2,10 +2,10 @@
   "name": "hello-world",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "node test.js",
-    "locally": "node -e \"console.log(require('./index').handler(require('./event.json')));\""
+    "locally": "node -e \"console.log(require('./app').handler(require('./event.json')));\""
   },
   "author": "",
   "license": "ISC",
