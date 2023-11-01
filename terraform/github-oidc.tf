@@ -42,7 +42,8 @@ data "aws_iam_policy_document" "github_actions_policy" {
     actions   = [
           "lambda:CreateFunction",
 				  "lambda:PublishLayerVersion",
-          "lambda:PublishVersion"
+          "lambda:PublishVersion",
+          "lambda:UpdateFunctionCode"
         ]
     resources = [
           for module_key, module_instance in module.lambda : module_instance.lambda_arn
