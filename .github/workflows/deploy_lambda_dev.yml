@@ -45,5 +45,6 @@ jobs:
           aws lambda update-function-code \
             --function-name ${{ vars.FUNCTION_NAME }} \
             --zip-file fileb://function.zip
+        working-directory: ./app
 
   
