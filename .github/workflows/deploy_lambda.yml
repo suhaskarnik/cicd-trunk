@@ -8,8 +8,8 @@ on:
   workflow_dispatch:
     
   push: 
-    branches:
-      - release/dev
+    tags:
+      - 'v*.*.*'
 
 jobs:
   deployment:
