@@ -1,4 +1,4 @@
-resource "aws_lambda_function" "example" {
+resource "aws_lambda_function" "this" {
   function_name = "lambda-${var.env_name}"
   handler = "app.handler"
   runtime = "nodejs18.x"  # Choose the desired Node.js runtime
