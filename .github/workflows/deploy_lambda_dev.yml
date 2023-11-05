@@ -5,11 +5,11 @@ permissions:
   contents: read  # This is required for actions/checkout
 
 on:
-  workflow_dispatch:
+  workflow_call:
     
-  push: 
-    tags:
-      - 'v*.*.*'
+  # push: 
+  #   tags:
+  #     - 'v*.*.*'
 
 jobs:
   deployment:
